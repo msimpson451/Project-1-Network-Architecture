@@ -10,21 +10,24 @@ These files have been tested and used to generate a live ELK deployment on Azure
 pentest.yml
 install-elk.yml
 filebeat-playbook.yml
+metricbeat-playbook.yml
 
 This document contains the following details:
 
 Description of the Topology
 Access Policies
-ELK Configuration
-Beats in Use
-Machines Being Monitored
+ELK Configuration:
+-Beats in Use
+-Machines Being Monitored
 How to Use the Ansible Build
+
+Description of the Topology:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 
-The Jump Box protects the confidentially of the network by only allowing ssh access via the one machine. In addition to this, should settings on the webservers need to be changed or updated we only need to makes changes on the Jump Box.
+The Jump Box protects the tightens security of the network by only allowing ssh access via the one machine. Additionally, this system enhances efficiency, as any updates or changes to settings required on the webservers need only be implemented via the Jump Box.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system services.
 
@@ -61,7 +64,7 @@ Download and launch a docker elk container
 Check the docker service is running
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
-(Images/docker_ps_output.png)
+(Images/docker-output.jpg)
 
 Target Machines & Beats
 This ELK server is configured to monitor the following machines:
