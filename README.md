@@ -1,4 +1,4 @@
-# H1 Automated ELK Stack Deployment
+# Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
 
@@ -14,7 +14,7 @@ Beats in Use
 Machines Being Monitored
 How to Use the Ansible Build
 
-# H2 Description of the Topology:
+## H2 Description of the Topology:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
@@ -25,13 +25,13 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 The configuration details of each machine may be found below.
  
  
-| Name      | Function   | IP Address  |
-| :-------: |:----------:| :----------:|
-| Jump Box  | gateway    | 10.0.0.4    |
-| Web-1     | Webserver  | 10.0.0.5    |
-| Web-2     | Webserver  | 10.0.0.6    |
-| Web-3     | Webserver  | 10.0.0.7    |
-| ELKserver | ELKserver  | 10.1.0.4    |
+| Name      | Function   | IP Address  | Operating System     |
+| :-------: |:----------:|:-----------:|:--------------------:|
+| Jump Box  | gateway    | 10.0.0.4    | Linux (ubuntu 18.04) |
+| Web-1     | Webserver  | 10.0.0.5    | Linux (ubuntu 18.04) |
+| Web-2     | Webserver  | 10.0.0.6    | Linux (ubuntu 18.04) |
+| Web-3     | Webserver  | 10.0.0.7    | Linux (ubuntu 18.04) |
+| ELKserver | ELKserver  | 10.1.0.4    | Linux (ubuntu 18.04) |
  
 NameFunctionIP Address
 Operating System
