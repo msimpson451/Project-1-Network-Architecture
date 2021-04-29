@@ -6,15 +6,17 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above. Alternatively, select yml files may be used to install only certain pieces of it, such as Filebeat.
 
-This document contains the following details:
-Description of the Topology
-Access Policies
-ELK Configuration
-Beats in Use
-Machines Being Monitored
-How to Use the Ansible Build
+##### This document contains the following details:
+..* Description of the Topology
+..* Access Policies
+..* ELK Configuration
+...* Beats in Use
+...* Machines being Monitored
+..* How to Use the Ansible Build
 
-## H2 Description of the Topology:
+
+
+## Description of the Topology:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
@@ -33,31 +35,9 @@ The configuration details of each machine may be found below.
 | Web-3     | Webserver  | 10.0.0.7    | Linux (ubuntu 18.04) |
 | ELKserver | ELKserver  | 10.1.0.4    | Linux (ubuntu 18.04) |
  
-NameFunctionIP Address
-Operating System
-Jump Box 
-Gateway
-10.0.0.4
-Linux (ubuntu 18.04)
-Web-1
-Webserver
-10.0.0.5
-Linux (ubuntu 18.04)
-Web-2
-Webserver
-10.0.0.6
-Linux (ubuntu 18.04)
-Web-3
-Webserver
-10.0.0.7
-Linux (ubuntu 18.04)
-ELK Server
-ELKserver
-10.1.0.4
-Linux (ubuntu 18.04)
 
- 
- Access Policies 
+## Access Policies 
+
 The machines on the internal network are not exposed to the public Internet.
 Only the JumpBox machine can accept ssh connections and the Load Balancer http requests. Access to these machines is only allowed from the following IP addresses: 101.188.140.245
 Machines within the network can only be accessed by the Jump Box or the Load Balancer
