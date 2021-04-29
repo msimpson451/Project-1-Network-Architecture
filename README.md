@@ -1,7 +1,11 @@
-Automated ELK Stack Deployment
+# H1 Automated ELK Stack Deployment
+
 The files in this repository were used to configure the network depicted below.
+
 (Images/NetworkDiagram.jpg)
+
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above. Alternatively, select yml files may be used to install only certain pieces of it, such as Filebeat.
+
 This document contains the following details:
 Description of the Topology
 Access Policies
@@ -9,17 +13,27 @@ ELK Configuration
 Beats in Use
 Machines Being Monitored
 How to Use the Ansible Build
-Description of the Topology:
+
+# H2 Description of the Topology:
+
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
+
 The Jump Box tightens security of the network by only allowing ssh access via the one machine. Additionally, this system enhances efficiency, as any updates or changes to settings required on the webservers need only be implemented via the Jump Box.
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system services.
+
 The configuration details of each machine may be found below.
  
  
-Name
-Function
-IP Address
+| Name      | Function   | IP Address  |
+| :-------: |:----------:| :----------:|
+| Jump Box  | gateway    | 10.0.0.4    |
+| Web-1     | Webserver  | 10.0.0.5    |
+| Web-2     | Webserver  | 10.0.0.6    |
+| Web-3     | Webserver  | 10.0.0.7    |
+| ELKserver | ELKserver  | 10.1.0.4    |
+ 
+NameFunctionIP Address
 Operating System
 Jump Box 
 Gateway
